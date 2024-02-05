@@ -1,6 +1,7 @@
 import Button from "./Components/Button/Button";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
+import ModeToggler from "./Components/ModeToggler/ModeToggler";
 import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Header word='hello'/>
       <Footer/>
       <Button />
+      <ModeToggler />
     </div>
   );
 }
