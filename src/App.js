@@ -5,6 +5,7 @@ import ModeToggler from "./Components/ModeToggler/ModeToggler";
 import Navbar from "./Components/Navbar/Navbar";
 import Promo from "./Components/Promo/Promo";
 import ShowDate from "./Components/ShowDate/ShowDate";
+import ShowWord from "./Components/ShowWord/ShowWord";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <ModeToggler />
       <Promo />
       <ShowDate message = {date.getTime()}/>
+      <ShowWord />
     </div>
   );
 }
