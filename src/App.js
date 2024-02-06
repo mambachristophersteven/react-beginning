@@ -3,6 +3,7 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import ModeToggler from "./Components/ModeToggler/ModeToggler";
 import Navbar from "./Components/Navbar/Navbar";
+import Promo from "./Components/Promo/Promo";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Footer/>
       <Button />
       <ModeToggler />
+      <Promo />
     </div>
   );
 }
