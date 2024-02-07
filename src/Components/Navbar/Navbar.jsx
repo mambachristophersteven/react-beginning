@@ -1,9 +1,14 @@
 import React from 'react'
 
-const Navbar = (props) => {
-    console.log(props)
+const Navbar = () => {
   return (
-    <div>Hello, my name is {props.name}. I am {props.age} and i have a {props.weapon}.</div>
+    <div className="">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+      <div className=""></div>
+    </div>
   )
 }
 
