@@ -1,25 +1,18 @@
-import Button from "./Components/Button/Button";
-import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
-import ModeToggler from "./Components/ModeToggler/ModeToggler";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
-import Promo from "./Components/Promo/Promo";
-import ShowDate from "./Components/ShowDate/ShowDate";
-import ShowWord from "./Components/ShowWord/ShowWord";
+import Homepage from "./Components/Homepage/Homepage";
+import About from "./Components/About/About";
+
 
 function App() {
 
-  const date =new Date();
   return (
     <div className="app">
-      <Navbar name='christopher' age='19' weapon='hammer'/>
-      <Header word='hello'/>
-      <Footer/>
-      <Button />
-      <ModeToggler />
-      <Promo />
-      <ShowDate message = {date.getTime()}/>
-      <ShowWord />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage/>}/>
+        <Route path="/about" element={<About/>}/>
+      </Routes>
     </div>
   );
 }
