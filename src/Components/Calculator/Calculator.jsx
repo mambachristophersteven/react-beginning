@@ -7,19 +7,27 @@ const Calculator = () => {
 
     const plus =(e) =>{
         e.prevetDefault();
-        setResult((result) => result + Number(inputRef.current.value))
+        setResult((result) => result + Number(inputRef.current.value));
     }
     const minus =(e) =>{
         e.prevetDefault();
-        setResult((result) => result - Number(inputRef.current.value))
+        setResult((result) => result - Number(inputRef.current.value));
     }
     const multiply =(e) =>{
         e.prevetDefault();
-        setResult((result) => result * Number(inputRef.current.value))
+        setResult((result) => result * Number(inputRef.current.value));
     }
     const divide =(e) =>{
         e.prevetDefault();
-        setResult((result) => result / Number(inputRef.current.value))
+        setResult((result) => result / Number(inputRef.current.value));
+    }
+    const resetInput =(e) =>{
+        e.prevetDefault();
+        inputRef.current.value = 0;
+    }
+    const resetResult =(e) =>{
+        e.prevetDefault();
+        setResult((preVal) => preVal * 0);
     }
   return (
     <div className="calculator">
