@@ -14,6 +14,9 @@ const Navbar = () => {
         <li>
         <Link to='/day'>Day</Link>
         </li>
+        <li>
+        <Link to='/calculator'>Calculator</Link>
+        </li>
       </ul>
       
     </div>
