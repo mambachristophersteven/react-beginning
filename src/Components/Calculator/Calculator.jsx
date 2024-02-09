@@ -32,6 +32,17 @@ const Calculator = () => {
   return (
     <div className="calculator">
         <h1>Simplest Working Calculator</h1>
+        <form>
+            <p ref={resultRef}>
+                {/* {add the value of the current total} */}
+            </p>
+            <input 
+            pattern='[0-9]' 
+            type='number' 
+            ref={inputRef} 
+            placeholder='Type a number'
+            />
+        </form>
         <input type="number" name="number" id="" placeholder='Input a number'/>
         <button>add</button>
     </div>
