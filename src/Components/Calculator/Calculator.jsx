@@ -42,9 +42,14 @@ const Calculator = () => {
             ref={inputRef} 
             placeholder='Type a number'
             />
+            <button onClick={plus}>add</button>
+            <button onClick={minus}>minus</button>
+            <button onClick={multiply}>multiply</button>
+            <button onClick={divide}>divide</button>
+            <button onClick={resetInput}>clear</button>
+            <button onClick={resetResult}>AC</button>
         </form>
-        <input type="number" name="number" id="" placeholder='Input a number'/>
-        <button>add</button>
+        
     </div>
   )
 }
