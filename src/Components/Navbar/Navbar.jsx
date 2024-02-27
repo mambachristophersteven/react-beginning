@@ -18,6 +18,10 @@ const Navbar = () => {
         <li>
         <Link to='/calculator'>Calculator</Link>
         </li>
+        <li>
+        <Link to='/accordion'>Accordion</Link>
+        </li>
+        
       </ul>
       
     </div>
