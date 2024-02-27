@@ -5,7 +5,7 @@ import About from "./Components/About/About";
 import WorkerText from "./Components/WorkerText/WorkerText";
 import Calculator from "./Components/Calculator/Calculator";
 import Accordion from "./Pages/Accordion/Accordion";
-
+import './App.css'
 
 function App() {
 
