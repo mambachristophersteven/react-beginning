@@ -6,7 +6,8 @@ const Accordion = () => {
   const[selected, setSelected] = useState(null);
 
   function handleSingleSelection(getCurrentId){
-    console.log(getCurrentId);
+    // console.log(getCurrentId);
+    setSelected(getCurrentId);
 
   }
   return (
@@ -20,6 +21,13 @@ const Accordion = () => {
                   <h3 className="item-heading">{dataItem.question}</h3>
                   <span>+</span>
                 </div>
+                {
+                  selected === dataItem.id ?
+                  <div className="content">
+                    <p className="content-text">{dataItem.answer}</p>
+                  </div> 
+                  :null
+                }
               </div>
               ) 
             : <div className="nodata">
