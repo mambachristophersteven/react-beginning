@@ -19,7 +19,7 @@ const Accordion = () => {
               <div className="item">
                 <div onClick={()=>handleSingleSelection(dataItem.id)} className="title">
                   <h3 className="item-heading">{dataItem.question}</h3>
-                  <span>+</span>
+                  <span className='plus'>+</span>
                 </div>
                 {
                   selected === dataItem.id ?
